@@ -1,0 +1,3 @@
+create a setting menu
+create background wallpaper change button inside it
+taskbar hide button

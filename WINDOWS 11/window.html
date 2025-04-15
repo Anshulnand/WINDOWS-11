@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WINDOWS 11</title>
+  <link rel="stylesheet" href="window.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="startup-screen" id="startup">
+    <img src="images/windowstart.png" alt="Windows Logo" class="startup-logo" />
+  </div>
+  
+  <div class="container">
+    <div class="taskbar">
+      
+      <div class="taskdiv">
+        
+        <div class="icon start" data-custom-value="Start">
+          <img src="./images/windows11.ico" alt="" />
+        </div>
+
+        <div class="icon filexp" data-custom-value="Folder">
+          <img src="./images/ms-file-explorer.ico" alt="" />
+        </div>
+        <div id="newicon" class="iconq"></div>
+      </div>
+      
+      <div class="tasktime">
+        <div class="iconr" id="langbut">
+          <p>ENG</p>
+        </div>
+      </div>
+      <div class="wifibox">
+        <div class="iconr"><i class="fa-solid fa-wifi"></i></div>
+        <div class="iconr"><i class="fa-solid fa-volume-high"></i></div>
+        <div class="iconr"><i class="fa-solid fa-battery-full"> </i></div>
+      </div>
+      <div class="timedate">
+        <div class="icone">
+          <p id="time"></p>
+        </div>
+        <div class="icone">
+          <p id="date"></p>
+        </div>
+      </div>
+      <div class="showdesk">
+        <p>|</p>
+      </div>
+    </div>
+    <div class="hoverdetail"></div>
+
+    <div class="wifiwindow">
+      <div class="wificontent">
+        <div class="row2">
+          <div class="rec">
+            <div class="wifiblock">
+              <i class="wifirec fa-solid fa-wifi"></i>
+            </div>
+            <p>Wi-Fi</p>
+          </div>
+          <div class="rec">
+            <div class="wifiblock">
+              <i class="wifirec fa-brands fa-bluetooth-b"></i>
+            </div>
+            <p>Bluetooth</p>
+          </div>
+
+          <div class="rec">
+            <div class="wifiblock">
+              <i class="wifirec fa-solid fa-battery-empty"></i>
+            </div>
+            <p>Battery saver</p>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="rec">
+            <div class="wifiblock"><i class="wifirec ph ph-sun-dim"></i></div>
+            <p>Night light</p>
+          </div>
+          <div class="rec">
+            <div class="wifiblock">
+              <i class="ph ph-person-arms-spread"></i>
+            </div>
+            <p>Accessibility</p>
+          </div>
+          <div class="rec">
+            <div class="wifiblock">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <p>Hotspot</p>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="bright">
+            <i class="ph ph-sun-dim"></i>
+            <input id="brightslider" type="range" value="40" min="0" max="80" />
+          </div>
+
+          <div class="vol">
+            <i class="ph ph-speaker-high"></i>
+            <input type="range" value="50" min="0" max="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="wifibotttom">
+        <div class="left2">
+          <i class="fa-solid fa-battery-full"></i>
+        </div>
+        <div class="right2">
+          <i class="ph ph-pencil-simple"></i>
+          <i class="ph ph-gear"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="nwindow1">
+      <div class="nwindow2">
+        <div class="startwind">
+          <div class="search">
+            <input id="search" placeholder="Search for apps, settings, and documents" type="text" />
+          </div>
+          <div class="text">
+            <p class="i">Pinned</p>
+            <button class="i">All apps ></button>
+          </div>
+        </div>
+        <div class="conticon">
+          <div class="row row1">
+            <div class="iconcontainer iconclick">
+              <img src="./images/powerpoint-icon.png" alt="" />
+              <p>powerpoint</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/terminal-icon.png" alt="" />
+              <p>terminal</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/todo-icon.png" alt="" />
+              <p>todo</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/vs-code.ico" alt="" />
+              <p>vs-code</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/Whiteboard.ico" alt="" />
+              <p>whiteboard</p>
+            </div>
+          </div>
+          <div class="row row2">
+            <div class="iconcontainer iconclick">
+              <img src="./images/calendar-icon.png" alt="" />
+              <p>calendar</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/Camera.ico" alt="" />
+              <p>camera</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/edge-icon.png" alt="" />
+              <p>edge</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/excel-icon.png" alt="" />
+              <p>excel</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-file-explorer.ico" alt="" />
+              <p>file explorer</p>
+            </div>
+          </div>
+          <div class="row row3">
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-foto-icon.ico" alt="" />
+              <p>photos</p>
+            </div>
+
+            <div class="iconcontainer iconclick" id="settingbut">
+              <img src="./images/ms-impostazioni-icon.ico" alt="" />
+              <p>settings</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-office.ico" alt="" />
+              <p>ms-office</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-skype.ico" alt="" />
+              <p>skype</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-store-icon.png" alt="" />
+              <p>ms store</p>
+            </div>
+          </div>
+          <div class="row row4">
+            <div class="iconcontainer iconclick">
+              <img src="./images/ms-video-icon.ico" alt="" />
+              <p>video player</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/outlook-icon.png" alt="" />
+              <p>outlook</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/Paint-2D.ico" alt="" />
+              <p>ms paint 2d</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/Paint-3D.ico" alt="" />
+              <p>ms paint 3d</p>
+            </div>
+
+            <div class="iconcontainer iconclick">
+              <img src="./images/PowerShell-icon.png" alt="" />
+              <p>powershell</p>
+            </div>
+          </div>
+        </div>
+        <div class="nwindowbottom">
+          <div class="left">
+            <div class="i profile">
+              <i class="fa-solid fa-circle-user"><span> Anshul</span></i>
+            </div>
+          </div>
+          <div class="right">
+            <div class="i folder"><i class="ph ph-folder-notch"></i></div>
+            <div class="i power"><i class="ph ph-power"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dragwindow">
+      <div class="titlebar">
+       <div class="titletext">
+       </div>
+        <div class="close">
+          <div class="minus"><i class="fa-solid fa-minus"></i></div>
+          <div class="max"><i class="fa-regular fa-square"></i></div>
+          <div class="cross"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <div class="dragcontent"></div>
+    </div>
+    <div class="language">
+      <div class="row1">
+        <p class="lhead">Keyboard layout</p>
+      </div>
+      <div class="row2">
+        <p class="lcont" id="lcont">English (United States)</p>
+      </div>
+      <div class="row3">
+        <p class="lcont">English (India)</p>
+      </div>
+      <div class="row4">
+        <p class="lsmall">More keyboard settings</p>
+      </div>
+    </div>
+
+    
+    <div id="settingsmenu">
+  <div class="titlebar">
+    <div class="close">
+      <div class="minusset"><i class="fa-solid fa-minus"></i></div>
+      <div class="maxset"><i class="fa-regular fa-square"></i></div>
+      <div class="crossset"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="portfolio-info">
+      <h2>Windows 11 Clone Project</h2>
+
+      <div class="project-summary">
+        <p><strong>Project Title:</strong> Windows 11 Clone</p>
+        <p><strong>Description:</strong> A replica of the Windows 11 operating system, built to demonstrate the ability to mimic the UI/UX and functionality of Windows 11 using HTML, CSS, and JavaScript. The project showcases a simulated environment of the Windows 11 desktop, incorporating key features like the Start Menu, Taskbar, and basic system settings.</p>
+      </div>
+
+      <div class="project-details">
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Interactive Start Menu</li>
+          <li>Taskbar with dynamic icons</li>
+          <li>Window management (minimize, maximize, close)</li>
+          <li>Basic system settings window</li>
+          <li>Hover and click effects for interactivity</li>
+        </ul>
+      </div>
+
+      <div class="project-tech-stack">
+        <h3>Technologies Used:</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="project-link">
+        <h3>Demo:</h3>
+        <p><a href="your-project-link-here" target="_blank">View the Project</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+  <script src="window.js"></script>
+</body>
+
+</html>
