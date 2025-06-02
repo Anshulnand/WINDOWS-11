@@ -45,19 +45,7 @@ To use this project locally, follow these steps:
 
 ---
 
-## Project Structure
 
-```plaintext
-/windows-11-taskbar-clone
-│
-├── index.html           # The main HTML file
-├── styles.css           # The main CSS file for styling
-├── images/              # Folder for images used in the project
-│   └── windows11.ico    # Icon for the Start button
-└── README.md            # This file
-```
-
----
 
 ## Technologies Used
 
